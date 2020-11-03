@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+#main{
+    display: flex;
+    flex-direction:row;
+}
+#main-index h1{
+    font-size: 2em;
+    position: fixed;
+    font-weight: 500;
+    padding: 10px 20px;
+    overflow: hidden;
+    background: white;
+    width: 100%;
+}
+#index{
+    margin-top: 60px;
+    position: fixed;
+    width: 300px;
+    overflow-y: scroll;
+    top: 0;
+    bottom: 0;
+}
+#index header{
+    border-top: 1px solid black;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+#main-index header a{
+    text-decoration: none;
+    color: black;
+    padding:0 20px;
+}
+
+#main-content{
+    position: relative;            
+    margin-left: 300px;
+}
+#main-content div{
+    margin: 40px;
+}
+div header{
+    font-size: 2.1em;
+}
+div p{
+    margin: 20px 20px 0 30px;
+    font-size: 1.1em;
+}
+ul li{
+    margin: 20px 20px 0 80px;
+    font-size: 1.1em;
+}
+div div{
+    background-color: rgba(211,211,211,0.4);
+    padding: 20px;
+    margin: 0;
+}
+#sublist{
+    margin-left: 4em;
+}
+#Reference{
+    padding-bottom: 600px;
+}
+@media screen and  (max-width:1000px){
+    #main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #main-index h1{
+        position: relative;
+        text-align: center;
+    }    
+    #index{
+        overflow: hidden;
+        width:100%;
+        height: 270px;
+        overflow-y: scroll;
+        top: 0;
+        bottom: 0;
+        z-index:1000;
+    }
+    #index header{
+        border: 1px solid black;
+        font-size: 1.3em;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+    #index{
+        margin-top: 20px;
+        position: relative;
+        border: 1px solid black;
+        color: grey;
+    }
+    #main-content{
+        margin: 20px;
+    }
+    #main-content div{
+        margin: 20px;
+        padding: 0;
+    }
+    #main-content header{
+        text-decoration: underline;
+    }
+}
